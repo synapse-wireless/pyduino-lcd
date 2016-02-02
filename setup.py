@@ -4,11 +4,11 @@
 from setuptools import setup
 
 setup(
-    name='pyduino-lcd',
+    name='pyduinolcd',
     description="LCD shield library for the Synapse Pyduino development board",
     maintainer='Tyler Crumpton',
     maintainer_email='tyler.crumpton@synapse-wireless.com',
-    url='https://git.synapse-wireless.com/tyler.crumpton/pyduino-lcd',
+    url='https://github.com/tylercrumpton/pyduino-lcd',
     packages=['pyduinolcd'],
     install_requires=['vcversioner'],
     vcversioner={
