@@ -6,7 +6,6 @@ Note: These ADC calculates can be recalculated for other shields resistor
 
 Ex.
   #Initialize the LED and write hello world to the display
-  lcd_init_io()
   lcd_init()
   
   clear_screen()
@@ -14,7 +13,6 @@ Ex.
   
 Ex.
   #Write the button that is currently being pressed to the display
-  lcd_init_io()
   lcd_init()
   
   @setHook(HOOK_100MS)
@@ -57,6 +55,9 @@ def lcd_init():
     # If plugged in USB, button offsets must be calibrated due to voltage tolerance
     global BUTTON_ADC
     global BUTTON_LEN
+
+    lcd_init_io()
+
     BUTTON_LEN = 6
     BUTTON_ADC = [0x00] * BUTTON_LEN*2
     calibrate_buttons()
@@ -165,6 +166,7 @@ def calibrate_buttons():
     max = itos(sense_adc_max()) # max adc
 
     for i in xrange(1, BUTTON_LEN):
+        # Multiply by 10,000 and divide by resistor divider ratio
         adc_ticks = stoi(div_32(mult_32(max, BUTTON_RATIO[i]), '\x00\x00\x27\x10'))
         BUTTON_ADC[i*2] = adc_ticks >> 8
         BUTTON_ADC[i*2+1] = adc_ticks & 0xFF
