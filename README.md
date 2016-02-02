@@ -4,12 +4,19 @@
 
 `pyduino-lcd` is a SNAPpy library that makes it easy to develop applications for the Pyduino that use an LCD shield.
 
-The [SparkFun LCD Button Shield](https://www.sparkfun.com/products/13293) works very well with the Pyduino and this library and is highly recommended. 
+The [SparkFun LCD Button Shield](https://www.sparkfun.com/products/13293) is highly recommended
+because it works very well with the Pyduino and this library.
 
-Installation
-------------
+## Installation
 
-The easiest way to install `pyduino-lcd` is using 
+### For use in Portal
+
+Download and extract the latest release zip file to Portal's `snappyImages` directory. 
+By default, this is located at `..\Documents\Portal\snappyImages` on Windows.
+
+### For use with SNAPbuild
+
+The easiest way to install `pyduino-lcd` for use with SNAPbuild is using 
 [pip](https://pip.pypa.io/en/latest/installing.html):
 
     pip install git+ssh://git@github.com:tylercrumpton/pyduino-lcd.git@master
