@@ -15,6 +15,10 @@ setup(
         'pyduinoincludes==2.1.0',
         'snappyatmega==1.0.1'
     ],
+    dependency_links=[
+        "git+https://github.com/synapse-wireless/pyduino-includes.git@v2.1.0#egg=pyduinoincludes-2.1.0",
+        "git+https://github.com/synapse-wireless/snappy-atmega.git@v1.0.1#egg=snappyatmega-1.0.1"
+    ],
     vcversioner={
         'version_module_paths': ['pyduinolcd/_version.py'],
     },
