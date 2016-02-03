@@ -22,8 +22,8 @@ Ex.
 
 """
 
-from PyduinoIO import *
-from atmega128rfa1_math import *
+from pyduinoincludes import *
+from snappyatmega.math import *
 
 # Pin definitions for LCD button shield
 LCD_RS = D8
