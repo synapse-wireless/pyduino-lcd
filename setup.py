@@ -10,7 +10,11 @@ setup(
     maintainer_email='tyler.crumpton@synapse-wireless.com',
     url='https://github.com/tylercrumpton/pyduino-lcd',
     packages=['pyduinolcd'],
-    install_requires=['vcversioner'],
+    install_requires=[
+        'vcversioner',
+        'pyduinoincludes==2.1.0',
+        'snappyatmega==1.0.1'
+    ],
     vcversioner={
         'version_module_paths': ['pyduinolcd/_version.py'],
     },
