@@ -2,8 +2,6 @@
 
 # Pyduino LCD Shield SNAPpy Library
 
-## Introduction
-
 `pyduino-lcd` is a SNAPpy library that makes it easy to develop applications for the Pyduino that use an LCD shield.
 
 The [SparkFun LCD Button Shield](https://www.sparkfun.com/products/13293) is highly recommended
