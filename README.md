@@ -19,8 +19,8 @@ By default, this is located at `..\Documents\Portal\snappyImages` on Windows.
 The easiest way to install `pyduino-lcd` for use with SNAPbuild is using 
 [pip](https://pip.pypa.io/en/latest/installing.html):
 
-    git+https://github.com/synapse-wireless/pyduino-lcd.git@master
+    pip install git+https://github.com/synapse-wireless/pyduino-lcd.git@master --process-dependency-links
 
-Alternatively you can download the source, extract it, and install it:
+Alternatively you can clone or download and extract the source, and install it:
 
-    python setup.py install
+    pip install ./pyduino-lcd --process-dependency-links
