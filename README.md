@@ -24,3 +24,7 @@ The easiest way to install `pyduino-lcd` for use with SNAPbuild is using
 Alternatively you can clone or download and extract the source, and install it:
 
     pip install ./pyduino-lcd --process-dependency-links
+
+## License
+
+Copyright © 2016 [Synapse Wireless](http://www.synapse-wireless.com/), licensed under the [Apache License v2.0](LICENSE.md).
