@@ -28,3 +28,6 @@ Alternatively you can clone or download and extract the source, and install it:
 ## License
 
 Copyright © 2016 [Synapse Wireless](http://www.synapse-wireless.com/), licensed under the [Apache License v2.0](LICENSE.md).
+
+
+<!-- meta-tags: vvv-lcd, vvv-pyduino, vvv-sm220, vvv-atmega, vvv-math, vvv-snappy, vvv-library -->
